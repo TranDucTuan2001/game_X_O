@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { MyButton } from './components/MyButton';
+import Profile from './components/Proflie';
+import ShoppingList from './components/ShoppingList';
+import MyApp from './components/MyApp';
+import ConditionRender from './components/ConditionRender';
+import SetState from './components/SetState';
+import Game from './components/game/Game';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div>
+    <h1>Welcome to my app</h1>
+    <MyButton />
+    <Profile/>
+    <ShoppingList/>
+    <MyApp/>
+    <ConditionRender/>
+    <SetState/> 
+    <Game/> 
 
+    
+  </div>
+    
+    
+  );
+  
+}
+    
 export default App;
